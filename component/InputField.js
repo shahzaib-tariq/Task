@@ -1,24 +1,29 @@
-import { View,Button } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
+import Button from 'react-native-button';
+
 const InputField =() => {
     return (
         <View style={{
             flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center'
+
+            justifyContent:'space-between',
+            alignItems: 'center',
+            flexDirection: 'row',
+
         }}>
-              <View style={{
-                backgroundColor: 'green',
-                padding: 10,
-                borderRadius: 16,
 
-                }}>
-                    <Button
-                        title="This is button"
-                        color="red">
-                    </Button>
+            <Button style={{
+                color:'green',
+                fontSize:30,
+            }}>like
+            </Button>
 
-            </View>
+            <Button style={{
+            color:'green',
+                fontSize:30,
+        }}>comment
+        </Button>
 
         </View>
     );
