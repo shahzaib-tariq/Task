@@ -1,4 +1,4 @@
-import { Text,View } from 'react-native';
+import { Text,View,Image } from 'react-native';
 import React from 'react';
 
 const AgeAndName =() => {
@@ -8,6 +8,7 @@ const AgeAndName =() => {
             <Text style={{alignSelf:'center',fontSize:30,}}>Age</Text>
 
         </View>
+
     );
 };
 export default AgeAndName;

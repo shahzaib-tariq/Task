@@ -1,20 +1,55 @@
-import { AppRegistry,Text,View } from 'react-native';
+import { AppRegistry,Text,View ,Image,TextInput,ScrollView} from 'react-native';
 import React,{Component} from 'react';
 import AgeAndName from './component/AgeAndName';
 import Header from './component/Header';
+import Buttonfile from './component/Buttonfile';
 import InputField from './component/InputField';
+import Picture from './component/Picture';
 const App =() => {
 
 
     return (
+        <ScrollView>
+        <View style={{backgroundColor:'white',
+            borderColor:'blue',
+            borderWidth:5,
+            borderRadius:15,
+            flex:1,
+            justifyContent:'center'}}>
 
-        <View style={{borderColor:'blue', borderWidth:5, flex:1,justifyContent:'center'}}>
-        <Text style={{fontSize:30,alignSelf:'center'}}>Welcome</Text>
-            <AgeAndName/>
             <Header/>
+
+            <View style={{
+                flex:3,
+                justifyContent:'center',
+                alignItems: 'center',
+                flexDirection: 'row',}}>
+
+                <Picture/>
+                <AgeAndName/>
+            </View>
+
+            <Buttonfile/>
             <InputField/>
 
-</View>
+            <Header/>
+
+            <View style={{
+                flex:3,
+                justifyContent:'center',
+                alignItems: 'center',
+                flexDirection: 'row',}}>
+
+                <Picture/>
+                <AgeAndName/>
+
+            </View>
+
+            <Buttonfile/>
+            <InputField/>
+
+        </View>
+        </ScrollView>
     );
 
 };
